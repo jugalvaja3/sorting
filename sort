@@ -1,0 +1,50 @@
+nums=[1,4,6,3,7,3,8]
+#bubbl sort
+# for i in range(len(nums)-1):
+#     for j in range(len(nums)-1-i):
+#         if nums[j]>nums[j+1]:
+#             nums[j], nums[j+1] = nums[j+1], nums[j]
+# print(nums)
+
+
+# selection sort
+# for i in range(len(nums)-1):
+#     min_index=i
+#     for j in range((i+1),len(nums)):
+#         if nums[min_index]>nums[j]:
+#             min_index=j
+#     nums[i], nums[min_index] = nums[min_index] , nums[i]
+# print(nums)
+
+#insertion sort
+# for i in range(len(nums)):
+#     for j in range(i,-1,-1):
+#         if j>0 and nums[j-1]>nums[j]:
+#             nums[j], nums[j-1] = nums[j-1], nums[j]
+#
+# print(nums)
+
+# #quicksort
+# def quicksort(nums):
+#     sort(0, len(nums)-1)
+# 
+# def sort(low, high):
+#     if low>=high:
+#         return
+#     pivot_index=part(low, high)
+#     sort(low,pivot_index-1)
+#     sort(pivot_index+1,high)
+# 
+# def part(low, high):
+#     pivot_index=(low+high)//2
+#     nums[pivot_index], nums[high]=nums[high], nums[pivot_index]
+#     for j in range(low,high):
+#         if nums[j]<nums[high]:
+#             nums[j], nums[low] = nums[low], nums[j]
+#             low+=1
+#     nums[low], nums[high] =  nums[high], nums[low]
+#     return low
+# if __name__=='__main__':
+#     print(nums)
+#     quicksort(nums)
+#     print(nums)
