@@ -1,2 +1,2 @@
 # sorting
-sorting codes
+This repo includes sorting codes 
